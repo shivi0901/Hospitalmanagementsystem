@@ -145,7 +145,6 @@ def edit_patient(request,pid):
     user = request.user
     patient = Patient.objects.get(id=pid)
     if request.method == "POST":
-
         
         n1 = request.POST['name']
         m1 = request.POST['mobile']
